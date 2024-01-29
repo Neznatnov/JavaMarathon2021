@@ -10,9 +10,9 @@ public class Task1 {
             System.out.println("Малоэтажный дом");
         } else if (5 <= i && i <= 8) {
             System.out.println("Среднеэтажный дом");
-        } else if (i >= 9){
+        } else if (i >= 9) {
             System.out.println("Многоэтажный дом");
-        } else{
+        } else {
             System.out.println("Ошибка ввода");
         }
     }

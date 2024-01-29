@@ -3,7 +3,7 @@ package day7;
 public class Player {
     public static final int MIN_STAMINA = 0;
     public static final int MAX_STAMINA = 100;
-    public static int countPlayers = 0;
+    private static int countPlayers = 0;
     private int stamina;
 
     public Player(int stamina) {
@@ -13,7 +13,7 @@ public class Player {
         }
     }
 
-    public int getCountPlayers() {
+    public static int getCountPlayers() {
         return countPlayers;
     }
 
@@ -22,18 +22,19 @@ public class Player {
     }
 
     public void run() {
-        if (stamina > MIN_STAMINA) {
-            stamina--;
+        if (stamina == MIN_STAMINA){
+            return;
         }
-        if (stamina == 0) {
+        stamina--;
+        if (stamina == MIN_STAMINA) {
             countPlayers--;
         }
     }
 
-    public void info() {
+    public static void info() {
         if (countPlayers < 6) {
             System.out.println("Команды неполные. На поле еще есть " + (6 - countPlayers) + " свободных мест");
-        } else if (countPlayers == 6) {
+        } else {
             System.out.println("На поле нет свободных мест");
         }
     }
