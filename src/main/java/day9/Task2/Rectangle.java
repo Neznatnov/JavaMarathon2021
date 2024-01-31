@@ -1,6 +1,6 @@
 package day9.Task2;
 
-public/* abstract*/ class Rectangle extends Figure {
+public class Rectangle extends Figure {
     private final int width;
     private final int height;
 

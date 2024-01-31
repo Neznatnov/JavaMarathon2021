@@ -1,6 +1,6 @@
 package day9.Task2;
 
-public /*abstract*/ class Triangle extends Figure {
+public class Triangle extends Figure {
 
     private final int lengthA;
     private final int lengthB;

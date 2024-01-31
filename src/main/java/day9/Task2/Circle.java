@@ -1,6 +1,6 @@
 package day9.Task2;
 
-public /*abstract*/ class Circle extends Figure {
+public class Circle extends Figure {
 
     private final int circleRadius;
 
